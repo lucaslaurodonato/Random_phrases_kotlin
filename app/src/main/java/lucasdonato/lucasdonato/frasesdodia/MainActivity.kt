@@ -29,7 +29,11 @@ class MainActivity : AppCompatActivity() {
         "Reconhecer o que se sabe e reconhecer o que não se sabe, é digno daquele que sabe",
         "Aproximo-me suavemente do momento em que os filósofos e os imbecis têm o mesmo destino.",
         "Não há nada na nossa inteligência que não tenha passado pelos sentidos.",
-        "O instinto é a mais inteligente das espécies de inteligência até agora descobertas."
+        "O instinto é a mais inteligente das espécies de inteligência até agora descobertas.",
+        "O segredo para ser feliz é aceitar o lugar onde você está hoje na vida, e dar o melhor de si todos os dias.",
+        "A sede ensina a beber a todos os animais, mas a embriaguez só pertence ao homem.\n" +
+                "- Henry Fielding",
+        "Os melhores momentos na vida são como os arcos-íris: aparecem quando você menos espera."
     )
 
 
