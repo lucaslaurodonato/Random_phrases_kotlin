@@ -18,38 +18,23 @@
 
     <TextView
         android:id="@+id/textoFrase"
-        android:layout_width="250dp"
-        android:layout_height="143dp"
-        android:layout_marginBottom="80dp"
+        android:layout_width="295dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="48dp"
         android:text="Precione o botão para gerar uma frase."
-        android:textColor="#000"
         android:textAlignment="center"
+        android:textColor="#000"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="gerarFrase"
-        android:text="Gerar"
-        android:shadowColor="#ccc"
-        android:background="#fff"
-        app:layout_constraintBottom_toTopOf="@+id/textoFrase"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.514"/>
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="233dp"
         android:layout_height="180dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,5 +50,16 @@
         android:text="Lucas Donato"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="59dp"
+        android:layout_height="48dp"
+        android:onClick="gerarFrase"
+        app:layout_constraintBottom_toTopOf="@+id/textoFrase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/botao_play_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
