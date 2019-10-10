@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var texto: TextView
     val frases = arrayOf(
+
         "O importante não é vencer todos os dias, mas lutar sempre.",
         "Maior que a tristeza de não haver vencido é a vergonha de não ter lutado!",
         "É melhor conquistar a si mesmo do que vencer mil batalhas.",
@@ -37,7 +38,6 @@ class MainActivity : AppCompatActivity() {
         "Os melhores momentos na vida são como os arcos-íris: aparecem quando você menos espera."
     )
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -45,14 +45,11 @@ class MainActivity : AppCompatActivity() {
         //chama o id do texto
         texto = findViewById(R.id.textoFrase) as TextView
 
-        //button_play.setOnClickListener{
-
-        //}
-
     }
 
-   //Chama as frases do array frases
+    //Chama as frases do array frases
     //função que gera as frases randomicas
+
    fun gerarFrase( view: View){
 
         val totalItensArray = frases.size // não limita o array a um numero mas sim ao total de frases que tiver nele
