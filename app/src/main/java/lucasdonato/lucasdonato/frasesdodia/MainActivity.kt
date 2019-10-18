@@ -1,9 +1,13 @@
 package lucasdonato.lucasdonato.frasesdodia
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
@@ -44,18 +48,20 @@ class MainActivity : AppCompatActivity() {
 
         //chama o id do texto
         texto = findViewById(R.id.textoFrase) as TextView
-
     }
+
 
     //Chama as frases do array frases
     //função que gera as frases randomicas
 
-   fun gerarFrase( view: View){
+    fun gerarFrase(view: View) {
 
         val totalItensArray = frases.size // não limita o array a um numero mas sim ao total de frases que tiver nele
         val numeroAleatorio = Random.nextInt(totalItensArray) //Gera um numero random para o array
 
-        texto.setText( frases [numeroAleatorio] ) // variavel texto recebe o numero da frase que será exibido
+        texto.setText(frases[numeroAleatorio]) // variavel texto recebe o numero da frase que será exibido
 
     }
+
+
 }

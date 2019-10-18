@@ -12,6 +12,7 @@
         android:layout_height="739dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/background" />
@@ -55,12 +56,13 @@
         android:id="@+id/imageView2"
         android:layout_width="59dp"
         android:layout_height="48dp"
+        android:contentDescription="TODO"
         android:onClick="gerarFrase"
         app:layout_constraintBottom_toTopOf="@+id/textoFrase"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:srcCompat="@drawable/botao_play_24dp"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.248"
+        app:srcCompat="@drawable/botao_play_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
