@@ -4,42 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/ourbg">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="446dp"
-        android:layout_height="739dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/background" />
 
     <TextView
         android:id="@+id/textoFrase"
         android:layout_width="295dp"
         android:layout_height="209dp"
         android:layout_marginBottom="48dp"
-        android:text="Precione o botão para gerar uma frase."
+        android:text="@string/click_here"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="233dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/icon" />
 
     <TextView
         android:id="@+id/textView"
@@ -48,21 +29,31 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Lucas Donato"
+        android:text="@string/lucas_donato"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="59dp"
-        android:layout_height="48dp"
-        android:contentDescription="TODO"
+    <Button
+        android:id="@+id/welcomeHome"
+        android:layout_width="245dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="304dp"
+        android:background="@drawable/btnget"
         android:onClick="gerarFrase"
-        app:layout_constraintBottom_toTopOf="@+id/textoFrase"
+        android:text="@string/gerar_nova_frase"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.248"
-        app:srcCompat="@drawable/botao_play_24dp" />
+        app:srcCompat="@drawable/icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

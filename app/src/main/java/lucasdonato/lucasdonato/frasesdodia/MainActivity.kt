@@ -1,17 +1,14 @@
 package lucasdonato.lucasdonato.frasesdodia
 
-import android.content.ClipData
-import android.content.ClipboardManager
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import androidx.appcompat.app.AppCompatActivity
+import com.airbnb.lottie.LottieAnimationView
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+
 
     lateinit var texto: TextView
     val frases = arrayOf(

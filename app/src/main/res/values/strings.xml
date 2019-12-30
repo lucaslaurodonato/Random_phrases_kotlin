@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FrasesdoDia</string>
+    <string name="gerar_nova_frase">Gerar nova frase</string>
+    <string name="let_s_go">Let\'s go!</string>
+    <string name="welcome_now">Welcome to Random Phrases</string>
+    <string name="get_start_here">Get It Started</string>
+    <string name="lucas_donato">Lucas Donato</string>
+    <string name="click_here">Precione o botão para gerar uma frase.</string>
 </resources>
